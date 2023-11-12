@@ -1,29 +1,16 @@
-/***********************************
-
-> 应用名称：阿里云盘
-> 脚本作者：Cuttlefish
-> 微信账号：墨鱼手记
-> 更新时间：2023-02-21
-> 通知频道：https://t.me/ddgksf2021
-> 投稿助手：https://t.me/ddgksf2013_bot
-> 脚本功能：优化首页display
-> 额外说明：此脚本停止维护，请引用下面链接[广告净化+本地视频倍速、码率切换]
-> 引用链接：https://gist.githubusercontent.com/ddgksf2013/f4752e632fd3375ea2811985c5b635dc/raw/alicloud.js
-> 问题反馈：📮 ddgksf2013@163.com 📮
-> 特别说明：⛔⛔⛔
-            本脚本仅供学习交流使用，禁止转载售卖
-            ⛔⛔⛔
-
-
 
 [rewrite_local]
 
 # ～ 阿里云盘（2023-01-05）@ddgksf2013
-^https?:\/\/api\.aliyundrive\.com\/apps\/v\d\/users\/(apps|home)\/widgets$ url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/alidrive.js
-
+# JavDB //api.yijingluowangluo.xyz, jdforrepam.com
+^https:\/\/(api\.yijingluowangluo\.xyz|jdforrepam\.com)\/api\/(v1\/(ads|startup|users)|v4\/movies\/\w+) url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js
+^https:\/\/(api\.yijingluowangluo\.xyz|jdforrepam\.com)\/api\/v1\/movies\/\w+\/play\? url script-request-header https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/javdb.js
+# JavDB //api.hechuangxinxi.xyz, jdforrepam.com
+^https:\/\/(api\.hechuangxinxi\.xyz|jdforrepam\.com)\/api\/(v1\/(ads|startup|users)|v4\/movies\/\w+) url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js
+^https:\/\/(api\.hechuangxinxi\.xyz|jdforrepam\.com)\/api\/v1\/movies\/\w+\/play\? url script-request-header https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/javdb.js
 [mitm]
 
-hostname=api.aliyundrive.com
+hostname=api.hechuangxinxi.xyz, jdforrepam.com
 
 ***********************************/
 
