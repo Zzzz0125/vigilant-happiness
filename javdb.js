@@ -9,6 +9,4 @@
 ^https:\/\/(api\.hechuangxinxi\.xyz|jdforrepam\.com)\/api\/v1\/movies\/\w+\/play\? url script-request-header https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/javdb.js
 [mitm]
 
-hostname=api.hechuangxinxi.xyz, jdforrepam.com
-
-***********************************/
+hostname=api.hechuangxinxi.xyz,jdforrepam.com
