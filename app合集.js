@@ -16,7 +16,8 @@ hostname=api.hummingbird.businessreview.global
 ^https:\/\/oxfordx\.cp\.com\.cn\/api\/pay\/apple_notify url script-response-body https://raw.githubusercontent.com/Yu9191/Rewrite/main/niujin10.js
 # 牛津高阶词典-去除首页下方广告
 ^https:\/\/oxadmin\.cp\.com\.cn\/api\/(hot\/index|advertise\/banner) url reject-dict
+
+
+  
 [mitm]
 hostname=api.hechuangxinxi.xyz, jdforrepam.com,api.hummingbird.businessreview.global,oxfordx.cp.com.cn
-
-***********************************/
